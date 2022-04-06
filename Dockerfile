@@ -1,7 +1,8 @@
 # Build this image:  docker build -t mpi .
 #
 
-FROM ubuntu:18.04
+# FROM ubuntu:18.04
+FROM nvidia/cuda:10.2-cudnn7-devel-ubuntu18.04
 # FROM phusion/baseimage
 
 MAINTAINER Ole Weidner <ole.weidner@ed.ac.uk>
@@ -79,3 +80,4 @@ RUN chown -R ${USER}:${USER} ${HOME}/mpi4py_benchmarks
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
+
