@@ -81,3 +81,16 @@ RUN chown -R ${USER}:${USER} ${HOME}/mpi4py_benchmarks
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
 
+RUN apt-get update -y && apt-get install -yq curl wget git python3-pip
+
+RUN curl -LO "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
+
+RUN bash Miniconda3-latest-Linux-x86_64.sh -p /miniconda -b
+
+RUN rm Miniconda3-latest-Linux-x86_64.sh
+
+ENV PATH=/miniconda/bin:${PATH}
+
+RUN conda update -y conda
+
+CMD ["bash"]
