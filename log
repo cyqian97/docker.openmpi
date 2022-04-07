@@ -1,0 +1,304 @@
+   creating build/lib.linux-x86_64-3.7/mayavi/components/ui
+    copying mayavi/components/ui/actor.py -> build/lib.linux-x86_64-3.7/mayavi/components/ui
+    copying mayavi/components/ui/__init__.py -> build/lib.linux-x86_64-3.7/mayavi/components/ui
+    copying mayavi/components/ui/contour.py -> build/lib.linux-x86_64-3.7/mayavi/components/ui
+    creating build/lib.linux-x86_64-3.7/mayavi/modules/ui
+    copying mayavi/modules/ui/surface.py -> build/lib.linux-x86_64-3.7/mayavi/modules/ui
+    copying mayavi/modules/ui/__init__.py -> build/lib.linux-x86_64-3.7/mayavi/modules/ui
+    copying mayavi/modules/ui/iso_surface.py -> build/lib.linux-x86_64-3.7/mayavi/modules/ui
+    creating build/lib.linux-x86_64-3.7/mayavi/core/lut
+    copying mayavi/core/lut/__init__.py -> build/lib.linux-x86_64-3.7/mayavi/core/lut
+    creating build/lib.linux-x86_64-3.7/mayavi/core/ui
+    copying mayavi/core/ui/module_manager.py -> build/lib.linux-x86_64-3.7/mayavi/core/ui
+    copying mayavi/core/ui/engine_view.py -> build/lib.linux-x86_64-3.7/mayavi/core/ui
+    copying mayavi/core/ui/__init__.py -> build/lib.linux-x86_64-3.7/mayavi/core/ui
+    copying mayavi/core/ui/mayavi_scene.py -> build/lib.linux-x86_64-3.7/mayavi/core/ui
+    copying mayavi/core/ui/api.py -> build/lib.linux-x86_64-3.7/mayavi/core/ui
+    copying mayavi/core/ui/engine_rich_view.py -> build/lib.linux-x86_64-3.7/mayavi/core/ui
+    copying mayavi/core/ui/lut_manager.py -> build/lib.linux-x86_64-3.7/mayavi/core/ui
+    creating build/lib.linux-x86_64-3.7/mayavi/sources/ui
+    copying mayavi/sources/ui/__init__.py -> build/lib.linux-x86_64-3.7/mayavi/sources/ui
+    copying mayavi/sources/ui/parametric_surface.py -> build/lib.linux-x86_64-3.7/mayavi/sources/ui
+    running build_ext
+    customize UnixCCompiler
+    customize UnixCCompiler using build_ext
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-march=native)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    creating /tmp/tmp3d1gxx46/miniconda
+    creating /tmp/tmp3d1gxx46/miniconda/envs
+    creating /tmp/tmp3d1gxx46/miniconda/envs/torch
+    creating /tmp/tmp3d1gxx46/miniconda/envs/torch/lib
+    creating /tmp/tmp3d1gxx46/miniconda/envs/torch/lib/python3.7
+    creating /tmp/tmp3d1gxx46/miniconda/envs/torch/lib/python3.7/site-packages
+    creating /tmp/tmp3d1gxx46/miniconda/envs/torch/lib/python3.7/site-packages/numpy
+    creating /tmp/tmp3d1gxx46/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils
+    creating /tmp/tmp3d1gxx46/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/checks
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-march=native'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-O3)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-O3'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-Werror)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-Werror'
+    CCompilerOpt.__init__[1701] : check requested baseline
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-msse)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-msse2)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse2'
+    CCompilerOpt.feature_test[1468] : testing feature 'SSE2' with flags (-msse -msse2)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -Werror'
+    CCompilerOpt.feature_test[1468] : testing feature 'SSE' with flags (-msse -msse2)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-msse3)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse3'
+    CCompilerOpt.feature_test[1468] : testing feature 'SSE3' with flags (-msse -msse2 -msse3)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -Werror'
+    CCompilerOpt.__init__[1710] : check requested dispatch-able features
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mssse3)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mssse3'
+    CCompilerOpt.feature_test[1468] : testing feature 'SSSE3' with flags (-msse -msse2 -msse3 -mssse3)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-msse4.1)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse4.1'
+    CCompilerOpt.feature_test[1468] : testing feature 'SSE41' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mpopcnt)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mpopcnt'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-msse4.2)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse4.2'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mavx)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mavx'
+    CCompilerOpt.feature_test[1468] : testing feature 'AVX' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -Werror'
+    CCompilerOpt.feature_test[1468] : testing feature 'POPCNT' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -Werror'
+    CCompilerOpt.feature_test[1468] : testing feature 'SSE42' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mf16c)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mf16c'
+    CCompilerOpt.feature_test[1468] : testing feature 'F16C' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mavx2)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mavx2'
+    CCompilerOpt.feature_test[1468] : testing feature 'AVX2' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mavx2)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mavx2 -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mfma)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mfma'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mavx512f)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mavx512f'
+    CCompilerOpt.feature_test[1468] : testing feature 'AVX512F' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -Werror'
+    CCompilerOpt.feature_test[1468] : testing feature 'FMA3' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mavx512cd)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mavx512cd'
+    CCompilerOpt.feature_test[1468] : testing feature 'AVX512CD' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mavx512cd)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mavx512cd -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mavx512er -mavx512pf)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mavx512er -mavx512pf'
+    CCompilerOpt.feature_test[1468] : testing feature 'AVX512_KNL' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mavx512cd -mavx512er -mavx512pf)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mavx512cd -mavx512er -mavx512pf -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mavx512vl -mavx512bw -mavx512dq)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mavx512vl -mavx512bw -mavx512dq'
+    CCompilerOpt.feature_test[1468] : testing feature 'AVX512_SKX' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mavx512cd -mavx512vl -mavx512bw -mavx512dq)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mavx512cd -mavx512vl -mavx512bw -mavx512dq -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mavx512ifma -mavx512vbmi)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mavx512ifma -mavx512vbmi'
+    CCompilerOpt.feature_test[1468] : testing feature 'AVX512_CNL' with flags (-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mavx512cd -mavx512vl -mavx512bw -mavx512dq -mavx512ifma -mavx512vbmi)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-msse -msse2 -msse3 -mssse3 -msse4.1 -mpopcnt -msse4.2 -mavx -mf16c -mfma -mavx2 -mavx512f -mavx512cd -mavx512vl -mavx512bw -mavx512dq -mavx512ifma -mavx512vbmi -Werror'
+    CCompilerOpt.cc_test_flags[1013] : testing flags (-mavx512vnni)
+    C compiler: gcc -pthread -B /miniconda/envs/torch/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+    
+    compile options: '-I/miniconda/envs/torch/include/python3.7m -c'
+    extra options: '-mavx512vnni'
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-z0dl0dii/mayavi_302996c97192413cac623e36c3ddabc3/setup.py", line 474, in <module>
+        **config
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/core.py", line 169, in setup
+        return old_setup(**new_attr)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/setuptools/__init__.py", line 153, in setup
+        return distutils.core.setup(**attrs)
+      File "/miniconda/envs/torch/lib/python3.7/distutils/core.py", line 148, in setup
+        dist.run_commands()
+      File "/miniconda/envs/torch/lib/python3.7/distutils/dist.py", line 966, in run_commands
+        self.run_command(cmd)
+      File "/miniconda/envs/torch/lib/python3.7/distutils/dist.py", line 985, in run_command
+        cmd_obj.run()
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/command/install.py", line 60, in run
+        r = self.setuptools_run()
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/command/install.py", line 34, in setuptools_run
+        return distutils_install.run(self)
+      File "/miniconda/envs/torch/lib/python3.7/distutils/command/install.py", line 545, in run
+        self.run_command('build')
+      File "/miniconda/envs/torch/lib/python3.7/distutils/cmd.py", line 313, in run_command
+        self.distribution.run_command(command)
+      File "/miniconda/envs/torch/lib/python3.7/distutils/dist.py", line 985, in run_command
+        cmd_obj.run()
+      File "/tmp/pip-install-z0dl0dii/mayavi_302996c97192413cac623e36c3ddabc3/setup.py", line 269, in run
+        build.build.run(self)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/command/build.py", line 61, in run
+        old_build.run(self)
+      File "/miniconda/envs/torch/lib/python3.7/distutils/command/build.py", line 135, in run
+        self.run_command(cmd_name)
+      File "/miniconda/envs/torch/lib/python3.7/distutils/cmd.py", line 313, in run_command
+        self.distribution.run_command(command)
+      File "/miniconda/envs/torch/lib/python3.7/distutils/dist.py", line 985, in run_command
+        cmd_obj.run()
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/command/build_ext.py", line 166, in run
+        cache_path=opt_cache_path
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 2569, in new_ccompiler_opt
+        opt = CCompilerOpt(compiler, **kwargs)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 2137, in __init__
+        _Parse.__init__(self, cpu_baseline, cpu_dispatch)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 1719, in __init__
+        self.feature_names(cpu_dispatch)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 1210, in feature_names
+        f, force_flags=force_flags, macros=macros
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 853, in cache_wrap_me
+        ccb = cb(self, *args, **kwargs)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 1508, in feature_is_supported
+        if not self.feature_test(impl, force_flags, macros=macros):
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 853, in cache_wrap_me
+        ccb = cb(self, *args, **kwargs)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 1464, in feature_test
+        force_flags = self.feature_flags(name)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 853, in cache_wrap_me
+        ccb = cb(self, *args, **kwargs)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 1440, in feature_flags
+        if not f or not self.cc_test_flags(f):
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 853, in cache_wrap_me
+        ccb = cb(self, *args, **kwargs)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 1015, in cc_test_flags
+        test = self.dist_test(test_path, flags)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 577, in dist_test
+        [source], flags, macros=macros, output_dir=self.conf_tmp_path
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 558, in dist_compile
+        return ccompiler.compile(sources, extra_postargs=flags, **kwargs)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler.py", line 89, in <lambda>
+        m = lambda self, *args, **kw: func(self, *args, **kw)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler.py", line 366, in CCompiler_compile
+        single_compile(o)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler.py", line 326, in single_compile
+        self._compile(obj, src, ext, cc_args, extra_postargs, pp_opts)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler.py", line 89, in <lambda>
+        m = lambda self, *args, **kw: func(self, *args, **kw)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/unixccompiler.py", line 54, in UnixCCompiler__compile
+        extra_postargs, display = display)
+      File "/miniconda/envs/torch/lib/python3.7/site-packages/numpy/distutils/ccompiler_opt.py", line 702, in _dist_test_spawn
+        universal_newlines=True)
+      File "/miniconda/envs/torch/lib/python3.7/subprocess.py", line 411, in check_output
+        **kwargs).stdout
+      File "/miniconda/envs/torch/lib/python3.7/subprocess.py", line 490, in run
+        stdout, stderr = process.communicate(input, timeout=timeout)
+      File "/miniconda/envs/torch/lib/python3.7/subprocess.py", line 951, in communicate
+        stdout = self.stdout.read()
+      File "/miniconda/envs/torch/lib/python3.7/encodings/ascii.py", line 26, in decode
+        return codecs.ascii_decode(input, self.errors)[0]
+    UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 45: ordinal not in range(128)
+    CCompilerOpt.cache_flush[809] : write cache to path -> /tmp/pip-install-z0dl0dii/mayavi_302996c97192413cac623e36c3ddabc3/build/temp.linux-x86_64-3.7/ccompiler_opt_cache_ext.py
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /miniconda/envs/torch/bin/python -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-z0dl0dii/mayavi_302996c97192413cac623e36c3ddabc3/setup.py'"'"'; __file__='"'"'/tmp/pip-install-z0dl0dii/mayavi_302996c97192413cac623e36c3ddabc3/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-otghckxu/install-record.txt --single-version-externally-managed --compile --install-headers /miniconda/envs/torch/include/python3.7m/mayavi Check the logs for full command output.
+(torch) FAIL: 1

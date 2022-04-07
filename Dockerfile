@@ -1,5 +1,5 @@
 # FROM ubuntu:18.04
-FROM nvidia/cuda:10.2-cudnn7-devel-ubuntu18.04
+FROM nvidia/cuda:11.6.1-cudnn8-devel-ubuntu20.04
 # FROM phusion/baseimage
 
 ##################################################################
@@ -15,7 +15,8 @@ RUN apt-get update -y && \
     apt-get install -y --no-install-recommends sudo apt-utils && \
     apt-get install -y --no-install-recommends openssh-server \
         python3-dev python3-numpy python3-pip python3-virtualenv python3-scipy \
-        gcc gfortran libopenmpi-dev openmpi-bin openmpi-common openmpi-doc binutils && \
+        gcc gfortran libopenmpi-dev openmpi-bin openmpi-common openmpi-doc binutils \
+        curl wget git python3-setuptools libx11-dev ffmpeg libsm6 libxext6 && \
     apt-get clean && apt-get purge && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mkdir /var/run/sshd
@@ -86,10 +87,8 @@ CMD ["/usr/sbin/sshd", "-D"]
 # My own setups
 # ------------------------------------------------------------
 
-# Some useful apps
-RUN apt-get update -y && apt-get install -yq curl wget git python3-pip python3-setuptools
-
 # Install zsh and OMzsh
+RUN apt-get update -y
 RUN apt-get install -yq zsh
 RUN chsh -s $(which zsh)
 RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.2/zsh-in-docker.sh)" -- \
