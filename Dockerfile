@@ -1,12 +1,10 @@
-# Build this image:  docker build -t mpi .
-#
-
 # FROM ubuntu:18.04
 FROM nvidia/cuda:10.2-cudnn7-devel-ubuntu18.04
 # FROM phusion/baseimage
 
-MAINTAINER Ole Weidner <ole.weidner@ed.ac.uk>
-
+##################################################################
+# This whole section is for mpirun. Do not touch until necessary #
+##################################################################
 ENV USER mpirun
 
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -80,17 +78,31 @@ RUN chown -R ${USER}:${USER} ${HOME}/mpi4py_benchmarks
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
+##################################################################
+#                      mpirun section ends                       #
+##################################################################
 
+# ------------------------------------------------------------
+# My own setups
+# ------------------------------------------------------------
+
+# Some useful apps
 RUN apt-get update -y && apt-get install -yq curl wget git python3-pip
 
+# Install zsh and OMzsh
+RUN apt-get install -yq zsh
+RUN chsh -s $(which zsh)
+RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.2/zsh-in-docker.sh)" -- \
+    -t tjkirch
+
+# Install conda
 RUN curl -LO "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
-
 RUN bash Miniconda3-latest-Linux-x86_64.sh -p /miniconda -b
-
 RUN rm Miniconda3-latest-Linux-x86_64.sh
-
 ENV PATH=/miniconda/bin:${PATH}
-
 RUN conda update -y conda
+RUN conda init zsh
 
-CMD ["bash"]
+#ENTRYPOINT ["/bin/zsh"]
+#CMD ["bash"]
+CMD [ "zsh" ]
