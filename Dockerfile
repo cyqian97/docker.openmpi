@@ -87,7 +87,7 @@ CMD ["/usr/sbin/sshd", "-D"]
 # ------------------------------------------------------------
 
 # Some useful apps
-RUN apt-get update -y && apt-get install -yq curl wget git python3-pip
+RUN apt-get update -y && apt-get install -yq curl wget git python3-pip python3-setuptools
 
 # Install zsh and OMzsh
 RUN apt-get install -yq zsh
