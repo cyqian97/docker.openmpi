@@ -2,22 +2,29 @@
 FROM nvidia/cuda:11.6.1-cudnn8-devel-ubuntu20.04
 # FROM phusion/baseimage
 
-##################################################################
-# This whole section is for mpirun. Do not touch until necessary #
-##################################################################
 ENV USER mpirun
 
-ENV DEBIAN_FRONTEND=noninteractive \
-    HOME=/home/${USER} 
+ENV HOME=/home/${USER} 
 
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=America/New_York
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends sudo apt-utils && \
     apt-get install -y --no-install-recommends openssh-server \
         python3-dev python3-numpy python3-pip python3-virtualenv python3-scipy \
         gcc gfortran libopenmpi-dev openmpi-bin openmpi-common openmpi-doc binutils \
-        curl wget git python3-setuptools libx11-dev ffmpeg libsm6 libxext6 && \
+        curl wget git python3-setuptools libx11-dev ffmpeg libsm6 libxext6 \
+        make build-essential libopenblas-dev \ 
+        xterm xauth openssh-server tmux mate-desktop-environment-core && \
     apt-get clean && apt-get purge && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN sudo -H python3 -m pip install --force pip
+
+
+##################################################################
+# This whole section is for mpirun. Do not touch until necessary #
+##################################################################
 
 RUN mkdir /var/run/sshd
 RUN echo 'root:${USER}' | chpasswd
@@ -51,8 +58,6 @@ ADD ssh/id_rsa.mpi.pub ${SSHDIR}/authorized_keys
 
 RUN chmod -R 600 ${SSHDIR}* && \
     chown -R ${USER}:${USER} ${SSHDIR}
-
-RUN sudo -H python3 -m pip install --upgrade pip
 
 USER ${USER}
 RUN  sudo -H python3 -m pip install --user -U setuptools \
