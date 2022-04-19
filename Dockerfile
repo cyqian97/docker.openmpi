@@ -1,25 +1,25 @@
 # FROM ubuntu:18.04
-FROM nvidia/cuda:11.6.1-cudnn8-devel-ubuntu20.04
+# FROM nvidia/cuda:11.6.1-cudnn8-devel-ubuntu20.04
+FROM nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04
 # FROM phusion/baseimage
 
 ENV USER mpirun
 
 ENV HOME=/home/${USER} 
 
+# To aviod the geographic area bug about tzdata
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/New_York
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends sudo apt-utils && \
-    apt-get install -y --no-install-recommends openssh-server \
-        python3-dev python3-numpy python3-pip python3-virtualenv python3-scipy \
-        gcc gfortran libopenmpi-dev openmpi-bin openmpi-common openmpi-doc binutils \
-        curl wget git python3-setuptools libx11-dev ffmpeg libsm6 libxext6 \
-        make build-essential libopenblas-dev \ 
+    apt-get install -y --no-install-recommends curl wget git \
+        python3-dev python3-numpy python3-pip python3-virtualenv python3-scipy python3-setuptools \
+        openssh-server gcc gfortran libopenmpi-dev openmpi-bin openmpi-common openmpi-doc binutils \
+        libx11-dev ffmpeg libsm6 libxext6 libsparsehash-dev \
+        ninja-build cmake build-essential libopenblas-dev \ 
         xterm xauth openssh-server tmux mate-desktop-environment-core && \
     apt-get clean && apt-get purge && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-RUN sudo -H python3 -m pip install --force pip
 
 
 ##################################################################
@@ -83,7 +83,7 @@ ADD mpi4py_benchmarks ${HOME}/mpi4py_benchmarks
 RUN chown -R ${USER}:${USER} ${HOME}/mpi4py_benchmarks
 
 EXPOSE 22
-CMD ["/usr/sbin/sshd", "-D"]
+# CMD ["/usr/sbin/sshd", "-D"]
 ##################################################################
 #                      mpirun section ends                       #
 ##################################################################
@@ -99,14 +99,28 @@ RUN chsh -s $(which zsh)
 RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.2/zsh-in-docker.sh)" -- \
     -t tjkirch
 
+# Install pytorch
+RUN pip install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio==0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
+
+
+#Install MinkowskiEigen
+# ENV TORCH_CUDA_ARCH_LIST="8.0+PTX"
+# ENV TORCH_NVCC_FLAGS="-Xfatbin -compress-all"
+# ENV MAX_JOBS=4
+# RUN pip install numpy
+# RUN pip install -U git+https://github.com/NVIDIA/MinkowskiEngine -v --no-deps \
+#                            --install-option="--force_cuda" \
+#                            --install-option="--blas=openblas"
+
 # Install conda
-RUN curl -LO "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
-RUN bash Miniconda3-latest-Linux-x86_64.sh -p /miniconda -b
-RUN rm Miniconda3-latest-Linux-x86_64.sh
-ENV PATH=/miniconda/bin:${PATH}
-RUN conda update -y conda
-RUN conda init zsh
+# RUN curl -LO "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
+# RUN bash Miniconda3-latest-Linux-x86_64.sh -p /miniconda -b
+# RUN rm Miniconda3-latest-Linux-x86_64.sh
+# ENV PATH=/miniconda/bin:${PATH}
+# RUN conda update -y conda
+# RUN conda init zsh
 
 #ENTRYPOINT ["/bin/zsh"]
 #CMD ["bash"]
+
 CMD [ "zsh" ]
